@@ -1,0 +1,38 @@
+* {
+    /* чтобы не учитывать ширину border и padding */
+    box-sizing: border-box; 
+    font-family: sans-serif;
+}
+.container {
+    /* стандарная ширина для браузера */
+    width: 1170px;
+    /* выравнивание по центру */
+    margin: 0 auto;
+}
+.menu__inner {
+    margin: 25px 0;
+    display: flex;
+    /* выравнивание */
+    justify-content: space-between;
+    align-items: center;
+}
+.nav {
+    display: flex;
+    /* убрать пункты у списка */
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+}
+.nav li a {
+    /* все буквы заглавные */
+    text-transform: uppercase;
+    color: #999;
+    /* убрать подчёркивание */
+    text-decoration: none;
+    padding: 10px 20px;
+}
+.nav li a:hover {
+    background-color: #ffc744;
+    color: #fff;
+    border-radius: 5px;
+}
